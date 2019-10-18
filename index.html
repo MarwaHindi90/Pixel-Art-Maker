@@ -1,0 +1,75 @@
+<!DOCTYPE html >
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title Website -->
+    <title>Frontend Pixel Art Maker</title>
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'> -->
+
+    <!-- My css style -->
+    <link rel="stylesheet" href="css/style.css" />
+
+
+</head>
+
+<body>
+    <div class="container my-4 text-center">
+        <h1 class="display-2">Pixel Art Maker</h1>
+        <h2 class="text-capitalize my-3">choose the grid size</h2>
+
+        <form class="size-picker">
+            <div class="my-3">
+                <label for="heightInp">Canvas Height :</label>
+                <input type="number" id="heightInp" name="height" min="1" value="1" />
+
+                <label for="widthInp"> Canvas Width :</label>
+                <input type="number" id="widthInp" name="width" min="1" value="1" />
+
+                <input type="submit" id="btn" value="Submit">
+            </div>
+        </form>
+
+        <div class="mb-3">
+            <h3>Pick A Color</h3>
+            <input type="color" id="colorInp" />
+
+
+
+        </div>
+        <h3 class="text-capitalize">design canvas</h3>
+
+        <p id="erase" class="text-danger font-weight-bold">
+            <strong></strong>
+        </p>
+
+        <table id="canvasInp" class="py-2 mb-5">
+
+        </table>
+
+
+    </div>
+
+    <footer class=" text-white text-center py-2 mt-5" id="#watermark">
+        By Marwa Sulieman Hindi
+    </footer>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/design.js"></script>
+
+</body>
+
+</html>
